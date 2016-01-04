@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------<br>
-<h3>BACKUP AND RECOVERY OF A FILE.</h3>
+<h3>BACKUP AND RECOVERY OF A FILE</h3>
 --------------------------------------------------------------------------------<br>
 <br>
 ASKED IN COMMVAULT 2nd ROUND FOR THE YEAR 2015 (Campus Recruitment).<br>
