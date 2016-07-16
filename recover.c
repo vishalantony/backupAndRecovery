@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <strings.h>
 #include "includes/consts_prototypes.h"
 #include "includes/filedata.h"
 
