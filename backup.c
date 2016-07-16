@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <strings.h>
 #include <string.h>
 #include "includes/consts_prototypes.h"
 #include "includes/filedata.h"
@@ -221,5 +220,9 @@ int backup(const char * filename, int v, const char * content) {
 			// successfully backed up.
 		}
 	}
+}
+
+void bcopy(const void * src, void * dest, size_t n) {
+	memcpy(dest, src, n);
 }
 
