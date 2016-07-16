@@ -18,5 +18,6 @@ void free_files(void);
 void free_memory(void);
 unsigned int hash(const char * fname);
 int recover(const char * filename, int ver, char * buff);
+void bcopy(const void * src, void * dest, size_t n);
 
 #endif
