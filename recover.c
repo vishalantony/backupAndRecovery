@@ -35,7 +35,7 @@ int recover(const char * filename, int ver, char * buff) {
 	// found the version.
 	int i = 0, j = 0;
 	for(i = 0; i < (vnptr->v).off; i++) {
-		bcopy((vnptr->v).contents[i], buff+j, CHUNKSIZE);
+		memcpy(buff+j, (vnptr->v).contents[i], CHUNKSIZE);
 		j += CHUNKSIZE;
 	}
 	buff[j] = '\0';

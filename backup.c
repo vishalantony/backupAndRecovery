@@ -61,7 +61,7 @@ int backup_file_not_exists(const char * filename, int v,const char * content, in
 			fprintf(stderr, "ERROR: No free chunks.\n");
 			return BACKUP_ERROR;
 		}
-		bcopy(content+i, (vnptr->v).contents[j], CHUNKSIZE);
+		memcpy((vnptr->v).contents[j], content+i, CHUNKSIZE);
 		i += CHUNKSIZE; // copied a chunk. go to next chunk. number of characters copied is the chunksize
 		j++;
 	}
@@ -221,8 +221,3 @@ int backup(const char * filename, int v, const char * content) {
 		}
 	}
 }
-
-void bcopy(const void * src, void * dest, size_t n) {
-	memcpy(dest, src, n);
-}
-
